@@ -10,7 +10,7 @@ let initialState = {
 }
 
 function App() {
-  const [formDataFirst, setFormDataFirst] = useState(initialState)
+  const [formData, setFormData] = useState(initialState)
   const [formError, setFormError] = useState(initialState)
 
   const validation = (userData) => { // formal argument 
