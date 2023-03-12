@@ -10,7 +10,7 @@ let initialState = {
 }
 
 function App() {
-  const [formData, setFormData] = useState(initialState)
+  const [formDataFirst, setFormDataFirst] = useState(initialState)
   const [formError, setFormError] = useState(initialState)
 
   const validation = (userData) => { // formal argument 
@@ -85,7 +85,7 @@ function App() {
     <div className="App">
       <form onSubmit={(e) => handleSubmit(e)}>
         <div>
-          <label>first name  </label>
+          <label>first name</label>
           <input
             type={'text'}
             placeholder='please enter your first name'
