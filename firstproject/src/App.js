@@ -85,7 +85,7 @@ function App() {
     <div className="App">
       <form onSubmit={(e) => handleSubmit(e)}>
         <div>
-          <label>first name</label>
+          <label>first name  </label>
           <input
             type={'text'}
             placeholder='please enter your first name'
