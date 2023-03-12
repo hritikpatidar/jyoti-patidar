@@ -15,7 +15,6 @@ function App() {
 
   const validation = (userData) => { // formal argument 
 
-    // console.log(userData);
     let error = {};
     let isValid = true;
 
@@ -59,7 +58,6 @@ function App() {
     let newData = { [name]: value }
     setFormData({ ...formData, [name]: name === "reminder_me" ? checked : value })
     const { error, isValid } = validation(newData)  // actual arguement 
-    // console.log("error", error);
     setFormError({
       ...formError,
       ...error
@@ -136,7 +134,6 @@ function App() {
           <input
             type="radio"
             name="reminder_me"
-            // value={formData.reminder_me}
             checked={formData.reminder_me}
             onChange={handlechange}
           />
